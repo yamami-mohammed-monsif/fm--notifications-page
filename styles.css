@@ -1,0 +1,40 @@
+:root {
+    --clr-primary-red: hsl(1, 90%, 64%);
+    --clr-primary-blue: hsl(219, 85%, 26%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(210, 60%, 98%);
+    --clr-neutral-300: hsl(211, 68%, 94%);
+    --clr-neutral-400: hsl(205, 33%, 90%);
+    --clr-neutral-500: hsl(219, 14%, 63%);
+    --clr-neutral-600: hsl(219, 12%, 42%);
+    --clr-neutral-700: hsl(224, 21%, 14%);
+
+    --ff-main: "Plus Jakarta Sans", sans-serif;
+
+    --fs-400: 1rem;
+
+    --fw-regular: 500;
+    --fw-bold: 800;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: var(--ff-main);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
