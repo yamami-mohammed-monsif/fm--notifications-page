@@ -49,8 +49,9 @@ h1 {
 
 .container {
     width: 90%;
-    max-width: 768px;
+    max-width: 650px;
     margin-inline: auto;
+    background-color: var(--clr-neutral-100);
 }
 
 
@@ -103,6 +104,11 @@ header {
     font-weight: var(--fw-bold);
 }
 
+.name:hover {
+    cursor: pointer;
+    color: var(--clr-primary-blue);
+}
+
 .unread-message {
     aspect-ratio: 1;
     width: .4rem;
@@ -116,9 +122,15 @@ header {
     font-weight: var(--fw-bold);
 }
 
+.post-name:hover {
+    cursor: pointer;
+    color: var(--clr-primary-blue);
+}
+
 .group-name {
     font-weight: var(--fw-bold);
     color: var(--clr-primary-blue);
+    cursor: pointer;
 }
 
 .message-content {
@@ -126,8 +138,27 @@ header {
     border-radius: .3rem;
     padding: .6rem;
     margin-top: .5rem;
+    display: none;
+}
+
+.message-content:hover {
+    cursor: pointer;
+    background-color: var(--clr-neutral-300);
 }
 
 .bg-blue {
     background-color: var(--clr-neutral-300);
+}
+
+
+@media(min-width: 600px ) {
+    body {
+        background-color: var(--clr-neutral-200);
+        padding-top: 3rem;
+    }
+
+    .container {
+        padding: 1rem;
+        border-radius: .5rem;
+    }
 }
