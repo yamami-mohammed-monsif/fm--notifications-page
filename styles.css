@@ -12,7 +12,7 @@
 
     --ff-main: "Plus Jakarta Sans", sans-serif;
 
-    --fs-400: 1rem;
+    --fs-400: .9rem;
 
     --fw-regular: 500;
     --fw-bold: 800;
@@ -30,6 +30,7 @@ body {
     line-height: 1.5;
     font-family: var(--ff-main);
     font-size: var(--fs-400);
+    color: var(--clr-neutral-600);
     font-weight: var(--fw-regular);
 }
 
@@ -37,4 +38,40 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  width: 2.5rem;
+}
+
+h1 {
+    font-weight: var(--fw-bold);
+    font-size: 1.1rem;
+    color: var(--clr-neutral-700);
+}
+
+.container {
+    width: 90%;
+    max-width: 768px;
+    margin-inline: auto;
+}
+
+
+/* ********************************************************************
+            header
+******************************************************************** */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1rem;
+}
+
+.notifications-number {
+    background-color: var(--clr-primary-blue);
+    color: white;
+    padding-inline: .6rem;
+    border-radius: .3rem;
+}
+
+.mark-all-as-read:hover {
+    cursor: pointer;
+    color: var(--clr-primary-blue);
 }
