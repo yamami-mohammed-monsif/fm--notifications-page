@@ -75,3 +75,59 @@ header {
     cursor: pointer;
     color: var(--clr-primary-blue);
 }
+
+/* ********************************************************************
+            main
+******************************************************************** */
+
+.notification {
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+.three-column-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+}
+
+.name {
+    color: var(--clr-neutral-700);
+    font-weight: var(--fw-bold);
+}
+
+.unread-message {
+    aspect-ratio: 1;
+    width: .4rem;
+    background-color: var(--clr-primary-red);
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+.post-name {
+    font-weight: var(--fw-bold);
+}
+
+.group-name {
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-blue);
+}
+
+.message-content {
+    border: solid 1px var(--clr-neutral-400);
+    border-radius: .3rem;
+    padding: .6rem;
+    margin-top: .5rem;
+}
+
+.bg-blue {
+    background-color: var(--clr-neutral-300);
+}
